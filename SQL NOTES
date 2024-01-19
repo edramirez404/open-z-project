@@ -1,0 +1,49 @@
+Basic commands to use SQL
+*************************************************
+*   How to create a table using CREATE TABLE    *
+*************************************************
+The CREATE TABLE statement is used to create a new table in a database.
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+
+**********************************************
+* HOW TO CUSTOMISE A TABLE USING ALTER TABLE *
+**********************************************
+SQL ALTER TABLE Statement
+The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+
+ALTER TABLE - ADD Column
+To add a column in a table, use the following syntax:
+ALTER TABLE table_name
+ADD column_name datatype;
+
+ALTER TABLE - DROP COLUMN
+To delete a column in a table, use the following syntax (notice that some database systems don't allow deleting a column):
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+ALTER TABLE - RENAME COLUMN
+To rename a column in a table, use the following syntax:
+
+ALTER TABLE table_name
+RENAME COLUMN old_name to new_name;
+
+***********************************************************
+* HOW TO DELETE DATA IN A DATABASE USING DELETE STATEMENT *
+***********************************************************
+Delete all records where brand is 'Volvo':
+DELETE FROM cars
+WHERE brand = 'Volvo';
+
+Delete All Records
+It is possible to delete all rows in a table without deleting the table. This means that the table structure, attributes, and indexes will be intact.
+The following SQL statement deletes all rows in the cars table, without deleting the table:
+Example
+Delete all records in the cars table:
+DELETE FROM cars;
+
